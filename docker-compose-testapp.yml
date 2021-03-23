@@ -1,0 +1,12 @@
+--- 
+services: 
+  build: 
+    context: ~
+    dockerfile: Dockerfile.test
+  deployment: ~
+  ports: 
+    - "3000:3000"
+  volumes: 
+    - ". :/app"
+    - /app/node_modules
+version: "3"
